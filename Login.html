@@ -1,0 +1,110 @@
+<!-- Fondo -->
+<!-- Form/Login -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+	<meta charset="UTF-8">
+	<title>Login/FacilAula2.0</title>
+	<style>
+	*{
+		margin:0;
+		padding:0;
+	}
+	body{
+	}
+	div.bann{
+		width: 100em;
+		height: 100em;
+		position: fixed;
+		/*background-color: green;*/
+		background-image: url(img/plataforma-de-educación-calificaciones-colegios.jpeg);
+
+	}
+	.titulo{
+		margin-top: 0.1em; 
+		margin-bottom: 12em;
+	}
+	h1{
+		font-weight: bold;
+		font-size: 50px;
+		font-family: Sans-Serif;
+		
+		background-color: rgba(240,205,154,0.8);
+		padding: 12px;
+		color: rgba(240,205,154,0.8);
+		/*color: #100100;*/
+		
+		border: 5px solid rgb(163,55,12);
+		border-radius: 0px 30%  0px 30%;
+	}
+		.login{
+			padding: 20px;
+			background-color:rgba(255,255,255,0.4);
+			margin-top: 13.5em;
+		}
+		
+		.user{
+			margin: 10px;
+		}
+		.contraseña{
+			margin: 10px;
+		}
+		.Ing{
+			margin-right: 0.7em !important;
+		}
+	</style>
+
+	<script>
+		$(document).ready(reveal);
+
+		function reveal(){
+			$("button").on('click', function(){
+				$('input').attr('type', 'text');
+			});
+		}
+	</script>
+</head>
+<body>
+
+<div class="bann">
+</div>
+
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-3"></div>
+		<div class="col-md-4"></div>
+		<div class="col-md-4">
+			<div class="row login">
+				
+				<div class="input-group input-group-lg user">
+  					<span class="input-group-addon" id="basic-addon1">@</span>
+  					<input type="text" class="form-control" placeholder="Usuario" aria-describedby="basic-addon1">
+				</div>
+
+				<div class="input-group input-group-lg contraseña">
+  					<input type="password" class="form-control pass" placeholder="Contraseña" aria-describedby="basic-addon1">
+  					<span class="input-group-addon btn" id="basic-addon1"><button>-.-</button></span>
+				</div>
+				
+				<a href="#" class="btn btn-primary pull-right Ing">- Ingresar -</a>
+			</div>
+			<div class="row titulo">
+				<h1 class="pull-right">
+					Facil Aula 2.0
+				</h1>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
